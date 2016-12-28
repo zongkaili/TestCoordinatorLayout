@@ -32,25 +32,26 @@
         mFlTitleContainer.setLayoutParams(petBackgroundLp);
     }
 ```
- - 处理ToolBar的显示
+- 处理ToolBar的显示
  ```java
     private void handleToolbarTitleVisibility(float percentage) {
-        if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
-            if (!mIsTheTitleVisible) {
-                startAlphaAnimation(mTbToolbar, ALPHA_ANIMATIONS_DURATION, View.VISIBLE);
-                mIsTheTitleVisible = true;
-            }
-        } else {
-            if (mIsTheTitleVisible) {
-                startAlphaAnimation(mTbToolbar, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
-                mIsTheTitleVisible = false;
+            if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
+                if (!mIsTheTitleVisible) {
+                    startAlphaAnimation(mTbToolbar, ALPHA_ANIMATIONS_DURATION, View.VISIBLE);
+                    mIsTheTitleVisible = true;
+                }
+            } else {
+                if (mIsTheTitleVisible) {
+                    startAlphaAnimation(mTbToolbar, ALPHA_ANIMATIONS_DURATION, View.INVISIBLE);
+                    mIsTheTitleVisible = false;
+                    
+                }
             }
         }
-    }
- ````
+ ``` 
  - 设置渐变的动画
  ```java
-        public static void startAlphaAnimation(View v, long duration, int visibility) {
+    public static void startAlphaAnimation(View v, long duration, int visibility) {
             AlphaAnimation alphaAnimation = (visibility == View.VISIBLE)
                     ? new AlphaAnimation(0f, 1f)
                     : new AlphaAnimation(1f, 0f);
@@ -58,12 +59,12 @@
             alphaAnimation.setDuration(duration);
             alphaAnimation.setFillAfter(true);
             v.startAnimation(alphaAnimation);
-        }
+    }
  ``` 
  - 控制titleBar下面的View的隐藏显示
  ```java
       @Override
-       public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+    public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
              int top = getYLocationOnScreen(mLlQTSwitcher);
              Log.d(TAG, "top : " + top + " location1[1] : " + getYLocationOnScreen(mLlQTSwitcher) + " location2[1] : " + getYLocationOnScreen(mRlTitleBarShadow));
      
@@ -73,5 +74,5 @@
                  } else {
                      mRlTitleBarShadow.setVisibility(View.GONE);
                  }
-       }
+    }
 ```
