@@ -47,8 +47,8 @@
             }
         }
     }
- ```
- -  设置渐变的动画
+ ````
+ - 设置渐变的动画
  ```java
         public static void startAlphaAnimation(View v, long duration, int visibility) {
             AlphaAnimation alphaAnimation = (visibility == View.VISIBLE)
