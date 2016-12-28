@@ -1,100 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/header_root"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_common_title_second"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">-->
+    android:layout_height="wrap_content"
+    android:background="@color/color_common_title_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp" >
+
+        <TextView
+            android:id="@+id/tv_common_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:text="User name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/chat_page_text_size_16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
 
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/rl_common_title_second"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/color_common_title_bg"
-            android:orientation="vertical" >
+            android:id="@+id/ll_select_tongcheng_or_quanguo"
+            android:layout_width="199dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_radiu_btn_layer"
+            android:orientation="horizontal"
+            android:padding="0.7dp"
+            android:visibility="visible" >
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="80dp" >
-
-                <TextView
-                    android:id="@+id/tv_common_title_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:drawablePadding="5dp"
-                    android:text="User name"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/chat_page_text_size_16sp" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp" >
-
-                <LinearLayout
-                    android:id="@+id/ll_select_tongcheng_or_quanguo"
-                    android:layout_width="199dp"
-                    android:layout_height="25dp"
-                    android:layout_centerHorizontal="true"
-                    android:background="@drawable/bg_radiu_btn_layer"
-                    android:orientation="horizontal"
-                    android:padding="0.7dp"
-                    android:visibility="visible" >
-
-                    <CheckedTextView
-                        android:id="@+id/tv_comment_oval_left_quanguo"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/bg_radiu_btn_half_left_selector"
-                        android:clickable="true"
-                        android:ellipsize="end"
-                        android:gravity="center"
-                        android:lines="1"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:text=""
-                        android:textSize="13sp"
-                        android:checked="false" />
-
-                    <View
-                        android:layout_width="0.5dp"
-                        android:layout_height="match_parent"
-                        android:background="#FEF7F4" />
-
-                    <CheckedTextView
-                        android:id="@+id/tv_comment_oval_left_tongcheng"
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:background="@drawable/bg_radiu_btn_half_right_selector"
-                        android:clickable="true"
-                        android:ellipsize="end"
-                        android:gravity="center"
-                        android:lines="1"
-                        android:paddingLeft="10dp"
-                        android:paddingRight="10dp"
-                        android:text=""
-                        android:textSize="13sp" />
-                </LinearLayout>
-            </RelativeLayout>
-
-            <TextView
-                android:id="@+id/tv_common_title_note"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_marginTop="5dp"
-                android:layout_gravity="center_horizontal"
-                android:text="与他通过围观什么建立联系"
-                android:textColor="#D5D5D2"
-                android:textSize="12sp" />
+            <CheckedTextView
+                android:id="@+id/tv_comment_oval_left_quanguo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiu_btn_half_left_selector"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textSize="13sp"
+                android:checked="false" />
 
             <View
-                android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:layout_below="@id/rl_common_title_second"
-                android:background="@color/color_common_title_bg" />
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="#FEF7F4" />
+
+            <CheckedTextView
+                android:id="@+id/tv_comment_oval_left_tongcheng"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radiu_btn_half_right_selector"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textSize="13sp" />
         </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_common_title_note"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+        android:text="与他通过围观什么建立联系"
+        android:textColor="#D5D5D2"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@id/rl_common_title_second"
+        android:background="@color/color_common_title_bg" />
+</LinearLayout>
