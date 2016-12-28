@@ -15,8 +15,9 @@
 ![screen](https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/device-2016-12-28-104337.png)-->
 
 ###关键代码：
-```java
-   // 设置自动滑动的动画效果
+
+ - 设置自动滑动的动画效果
+ ```java
     private void initParallaxValues() {
         CollapsingToolbarLayout.LayoutParams petDetailsLp =
                 (CollapsingToolbarLayout.LayoutParams) mIvPlaceholder.getLayoutParams();
@@ -30,8 +31,9 @@
         mIvPlaceholder.setLayoutParams(petDetailsLp);
         mFlTitleContainer.setLayoutParams(petBackgroundLp);
     }
-
-  // 处理ToolBar的显示
+```
+ - 处理ToolBar的显示
+ ```java
     private void handleToolbarTitleVisibility(float percentage) {
         if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
             if (!mIsTheTitleVisible) {
@@ -45,8 +47,9 @@
             }
         }
     }
-    
-     // 设置渐变的动画
+ ```
+ -  设置渐变的动画
+ ```java
         public static void startAlphaAnimation(View v, long duration, int visibility) {
             AlphaAnimation alphaAnimation = (visibility == View.VISIBLE)
                     ? new AlphaAnimation(0f, 1f)
@@ -56,8 +59,9 @@
             alphaAnimation.setFillAfter(true);
             v.startAnimation(alphaAnimation);
         }
-        
-     //控制titleBar下面的View的隐藏显示
+ ``` 
+ - 控制titleBar下面的View的隐藏显示
+ ```java
       @Override
        public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
              int top = getYLocationOnScreen(mLlQTSwitcher);
