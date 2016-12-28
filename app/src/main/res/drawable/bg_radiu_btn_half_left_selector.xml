@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:topLeftRadius="@dimen/comment_page_oval_btn_radius"
+                     android:bottomLeftRadius="@dimen/comment_page_oval_btn_radius"/>
+        </shape>
+    </item>
+    
+    <item android:state_enabled="true" android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#F66A21" />
+            <corners android:topLeftRadius="@dimen/comment_page_oval_btn_radius"
+                     android:bottomLeftRadius="@dimen/comment_page_oval_btn_radius"/>
+        </shape>
+    </item>
+</selector>
