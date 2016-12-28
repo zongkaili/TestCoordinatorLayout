@@ -32,7 +32,7 @@
         mFlTitleContainer.setLayoutParams(petBackgroundLp);
     }
 ```
-- 处理ToolBar的显示
+ - 处理ToolBar的显示
  ```java
     private void handleToolbarTitleVisibility(float percentage) {
             if (percentage >= PERCENTAGE_TO_SHOW_TITLE_AT_TOOLBAR) {
