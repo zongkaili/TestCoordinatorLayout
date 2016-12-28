@@ -7,7 +7,8 @@ listView作为toorBar的anchor，CircleImageView依赖toorBar，
 
 <img src="https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/testCoordDemo.gif" width="400">
 
+<!--
 附上几张截图：
 ![screen](https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/device-2016-12-28-104145.png)
 ![screen](https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/device-2016-12-28-104254.png)
-![screen](https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/device-2016-12-28-104337.png)
+![screen](https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/device-2016-12-28-104337.png)-->
