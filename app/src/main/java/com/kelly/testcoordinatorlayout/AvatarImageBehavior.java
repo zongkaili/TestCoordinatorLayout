@@ -10,8 +10,6 @@ import android.view.View;
 
 /**
  * 图片控件位置动画
- *
- * @author wangchenlong
  */
 @SuppressWarnings("unused")
 public class AvatarImageBehavior extends CoordinatorLayout.Behavior<CircleImageView> {

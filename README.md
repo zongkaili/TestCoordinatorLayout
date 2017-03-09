@@ -2,7 +2,7 @@
  - CoordinatorLayout结合自定义beheavior，listView的使用
  - listView作为toorBar的anchor，CircleImageView依赖toorBar
  - 利用自定义的CircleImageView的beheavior实现：滑动listView时，toorBar和CircleImageView随着分别渐隐渐现和放大缩小等效果
-
+ - 注：只能在Android5.0及以上才有效果
 ### 运行效果如下：
 
 ![pic](https://github.com/zongkaili/MyTestCoordinatorLayout-master/blob/master/screenshot/testCoordDemo.gif)
